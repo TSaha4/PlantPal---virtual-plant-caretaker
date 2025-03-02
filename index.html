@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-nav">
+            <img src="logo.png" alt="logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <!-- <li><a href="#" class="nav-item">My Garden</a></li> -->
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div> -->
+    </header>
+    <main>
+        <div id="search" class="container">
+            <p id="l1">A Blooming Plant, A Happier You!</p>
+            <p>Discover the Secrets to Help Your Plants Thrive!</p>
+            
+            <div class="search-container">
+                <input type="text" id="plant-name" placeholder="Enter plant name...">
+                
+                <!-- File input for image upload -->
+                <input type="file" id="image-upload" accept="image/*" hidden>
+                
+                <!-- Green button with camera and search icons -->
+                <div class="icon-container" id="camera-icon">
+                    <!-- Camera Icon -->
+                    <label for="image-upload" class="icon-button">
+                        <i id="camera" class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+                <div class="icon-container">
+                    <!-- Send Icon -->
+                    <button id="search-button" class="icon-button">
+                        <i id="send" class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, maiores!</p>
+        </div>
+        <div id="gardening" class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque.</p>
+        </div>
+        <div id="contact" class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque.</p>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
