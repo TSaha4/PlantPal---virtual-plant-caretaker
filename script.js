@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear file input on page reload
     imageInput.value = "";
 
-    // Open file picker when clicking the camera icon
-
     // Show image preview
     imageInput.addEventListener("change", function () {
         console.log("File input changed"); // Debugging
