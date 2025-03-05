@@ -51,9 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
     imageInput.value = "";
 
     // Open file picker when clicking the camera icon
-    cameraIcon.addEventListener("click", function () {
-        imageInput.click();
-    });
 
     // Show image preview
     imageInput.addEventListener("change", function () {
