@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("HeadName Element:", headName);
         headName.innerHTML = `<h2 style="margin-bottom: 0px">${plant.common_name}</h2>
-                                <h3 style="margin-top: 2px"><i>(${plant.scientific_name})</i></h3>`;
+                                <h3 style="margin-top: 2px; margin-left: 0px;"><i>(${plant.scientific_name})</i></h3>`;
         searchPlantData(plant.common_name);
         console.log("Plant Data Received:", plant);
 
