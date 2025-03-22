@@ -110,7 +110,7 @@ body {
 }
 
 #search {
-    background: linear-gradient(rgba(13, 83, 39, 0.5), rgba(8, 75, 33, 0.5)), url('/PlantPal/assets/images/bg_img.png') center/cover no-repeat;
+    background: linear-gradient(rgba(13, 83, 39, 0.5), rgba(8, 75, 33, 0.5)), url('/assets/images/bg_img.png') center/cover no-repeat;
     height: 60vh;
 }
 
