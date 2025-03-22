@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal</title>
+    <link rel="icon" type="image/png" href="/PlantPal/assets/images/logo_img.png">
+    <link rel="stylesheet" href="/PlantPal/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-nav">
+            <img src="/PlantPal/assets/images/logo.png" alt="logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="search" class="container">
+            <p id="l1">A Blooming Plant, A Happier You!</p>
+            <p>Discover the Secrets to Help Your Plants Thrive!</p>
+
+            <div class="search-container">
+                <input type="text" id="plant-name" placeholder="Enter plant name...">
+
+                <!-- File input for image upload -->
+                <input type="file" id="image-upload" accept="image/*" hidden>
+
+                <!-- Green button with camera and search icons -->
+                <div class="icon-container" id="camera-icon">
+                    <!-- Camera Icon -->
+                    <label for="image-upload" class="icon-button">
+                        <i id="camera" class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+                <div class="icon-container">
+                    <!-- Send Icon -->
+                    <button id="search-button" class="icon-button">
+                        <i id="send" class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="msg"></div>
+        </div>
+
+        <div id="about" class="container">
+            <h1>About the Project</h1>
+            <div class="about-content">
+                <img src="/PlantPal/assets/images/garden.png" alt="Plant Image">
+                <div class="abt-text-content">
+                    <p>
+                        <strong>PlantPal</strong> is a web-based platform designed to help users identify plants and
+                        access essential gardening information effortlessly. By allowing searches through both plant
+                        names and images, the platform makes plant identification seamless and intuitive. Using the
+                        relevant APIs, like plant.id(for image recognition), and a curated database for name-based
+                        searches, the system provides detailed insights, including scientific names, watering schedules,
+                        and care tips.
+                    </p>
+                    <p>
+                        The project aims to encourage urban dwellers to engage in gardening by making plant care more
+                        accessible. With increasing urbanization, access to green spaces has become limited, making
+                        gardening a great way to reconnect with nature and relieve stress. Our platform simplifies this
+                        process by offering users easy access to plant-related information to support their plant care
+                        journey.
+                    </p>
+                    <p>
+                        As the project evolves, we plan to expand our plant database, enhancing the accuracy and variety
+                        of plant information. By combining technology with gardening, our goal is to bridge the gap
+                        between people and nature, making plant care and gardening an enjoyable and informative
+                        experience for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gardening" class="container">
+            <h2>Alignment to SDG Goals</h2>
+            <div class="sdg">
+                <div class="sdg-txt">
+                    <p> PlantPal supports India's Sustainable Development Goals by making plant care accessible through
+                        technology. As urbanization reduces greenery and worsens air quality, our platform helps people
+                        reconnect with nature, promoting environmental sustainability and urban biodiversity while
+                        contributing to overall well-being.</p>
+                    <h3>Supporting SDG 11: Sustainable Cities and Communities</h3>
+                    <p>SDG 11 promotes sustainable urban development. With shrinking green spaces, PlantPal encourages
+                        urban gardening by providing easy access to plant care knowledge, helping create greener and
+                        healthier cities.</p>
+
+                    <h3>Aligning with SDG 13: Climate Action</h3>
+                    <p>SDG 13 urges action against climate change. Plants reduce CO₂ levels and improve sustainable
+                        environment and lower their carbon footprint.</p>
+
+                    <h3>Contributing to SDG 15: Life on Land</h3>
+                    <p>SDG 15 focuses on biodiversity conservation. Urbanization threatens plant diversity, but PlantPal
+                        helps users identify and care for plants, promoting sustainable gardening and ecosystem
+                        preservation.
+                    </p>
+                    <p>We aim to make plant care effortless and promote sustainable urban gardening. Every plant
+                        nurtured contributes to a healthier environment and a greener future.</p>
+
+                    <p>Start growing today—one plant at a time! </p>
+                </div>
+                <img src="/PlantPal/assets/images/sdg.png" alt="img2">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 PlantPal. Small steps, greener future. Keep planting! 🌱</p>
+        </div>
+    </footer>
+
+    <script src="/PlantPal/assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PlantPal / Result</title>
+    <link rel="icon" type="image/png" href="/PlantPal/assets/images/logo_img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/PlantPal/assets/css/style2.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-nav">
+            <img src="/PlantPal/assets/images/logo.png" alt="logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="search" class="container">
+            <div class="back">
+                <button class="back-btn" id="back-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="plant-name" placeholder="Enter plant name...">
+
+                <!-- File input for image upload -->
+                <input type="file" id="image-upload" accept="image/*" hidden>
+
+                <!-- Green button with camera and search icons -->
+                <div class="icon-container" id="camera-icon">
+                    <!-- Camera Icon -->
+                    <label for="image-upload" class="icon-button">
+                        <i id="camera" class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+                <div class="icon-container">
+                    <!-- Send Icon -->
+                    <button id="search-button" class="icon-button">
+                        <i id="send" class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="result">
+                <div id="name"></div>
+                <div id="imgs">
+                    <img id="plant-image1" src="" alt="Plant Image">
+                    <img id="plant-image2" src="" alt="Plant Image">
+                    <img id="plant-image3" src="" alt="Plant Image">
+                </div>
+                <div id="desc"></div>
+                <hr>
+                <h3>Care-Taking Tips</h3>
+                <div class="tips" id="tips"></div>
+                <hr>
+                <h3>Fun Fact!</h3>
+                <div class="fun" id="fun"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 PlantPal. Small steps, greener future. Keep planting! 🌱</p>
+        </div>
+    </footer>
+
+    <script src="/PlantPal/assets/js/script2.js"></script>
+</body>
+
+</html>

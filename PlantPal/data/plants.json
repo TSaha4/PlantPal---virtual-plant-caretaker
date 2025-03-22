@@ -1,0 +1,272 @@
+[
+    {
+        "common_name": "Rose",
+        "scientific_name": "Rosa indica",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 2-3 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, loamy soil",
+        "tips": "Prune regularly for better blooms.",
+        "fun_fact": "The oldest fossilized rose was found in Colorado and is estimated to be around 35 million years old!"
+    },
+    {
+        "common_name": "Marigold",
+        "scientific_name": "Tagetes",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 3-4 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, moderately fertile",
+        "tips": "Deadhead flowers to promote continuous blooming.",
+        "fun_fact": "In Mexico, marigolds are known as \"flowers of the dead\" and are used in <i>Día de los Muertos</i> (Day of the Dead) celebrations."
+    },
+    {
+        "common_name": "Daffodil",
+        "scientific_name": "Narcissus",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Full sun to partial shade",
+        "soil": "Well-drained, sandy or loamy",
+        "tips": "Plant bulbs in autumn for spring blooms.",
+        "fun_fact": "Daffodils are toxic to rodents, which is why squirrels and rabbits avoid eating them."
+    },
+    {
+        "common_name": "Tulip",
+        "scientific_name": "Tulipa",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Full sun to partial shade",
+        "soil": "Well-drained sandy or loamy soil",
+        "tips": "Plant bulbs in the fall for spring blooms.",
+        "fun_fact": "During the 1600s in the Netherlands, tulips were so valuable that they caused \"Tulip Mania,\" where a single bulb could cost as much as a house!"
+    },
+    {
+        "common_name": "Sunflower",
+        "scientific_name": "Helianthus annuus",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 3-4 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained sandy or loamy soil",
+        "tips": "Provide support for tall varieties.",
+        "fun_fact": "Sunflowers can clean up radiation from soil, as they were used to remove toxins after the Chernobyl disaster."
+    },
+    {
+        "common_name": "Lavender",
+        "scientific_name": "Lavandula",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, sandy or rocky soil",
+        "tips": "Prune after flowering to maintain shape.",
+        "fun_fact": "Ancient Romans used lavender in their baths to keep their skin fresh and fragrant."
+    },
+    {
+        "common_name": "Petunia",
+        "scientific_name": "Petunia hybrida",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 2-3 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, fertile soil",
+        "tips": "Deadhead spent flowers to encourage continuous blooming.",
+        "fun_fact": "Petunias are known for their ability to repel some garden pests."
+    },
+    {
+        "common_name": "Dahlia",
+        "scientific_name": "Dahlia pinnata",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Regular, avoid overwatering",
+        "sunlight": "Full sun",
+        "soil": "Rich, well-drained soil",
+        "tips": "Stake tall varieties to prevent them from toppling over.",
+        "fun_fact": "Dahlias come in nearly every color except true blue."
+    },
+    {
+        "common_name": "Geranium",
+        "scientific_name": "Pelargonium",
+        "indoor_or_outdoor": "Indoor/Outdoor",
+        "watering_frequency": "Allow soil to dry between waterings",
+        "sunlight": "Full sun to partial shade",
+        "soil": "Well-drained, light soil",
+        "tips": "Pinch back stems to encourage bushy growth.",
+        "fun_fact": "Geraniums are commonly used in perfumes due to their fragrant leaves."
+    },
+    {
+        "common_name": "Oleander",
+        "scientific_name": "Nerium oleander",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Drought-tolerant, occasional deep watering",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, sandy soil",
+        "tips": "Wear gloves when handling as all parts are toxic.",
+        "fun_fact": "Oleander is one of the most poisonous commonly grown garden plants."
+    },
+    {
+        "common_name": "Morning Glory",
+        "scientific_name": "Ipomoea purpurea",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Moderate, keep soil slightly moist",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, loamy soil",
+        "tips": "Provide a trellis for climbing varieties.",
+        "fun_fact": "Morning Glory flowers open in the morning and close by the afternoon."
+    },
+    {
+        "common_name": "Gardenia",
+        "scientific_name": "Gardenia jasminoides",
+        "indoor_or_outdoor": "Indoor/Outdoor",
+        "watering_frequency": "Regular, keep soil consistently moist",
+        "sunlight": "Partial shade",
+        "soil": "Acidic, well-drained soil",
+        "tips": "Provide high humidity for best growth.",
+        "fun_fact": "Gardenia flowers are often used in wedding bouquets for their fragrance."
+    },
+    {
+        "common_name": "Carnation",
+        "scientific_name": "Dianthus caryophyllus",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Moderate, avoid waterlogging",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, slightly alkaline soil",
+        "tips": "Trim faded blooms to extend the flowering season.",
+        "fun_fact": "Carnations are often used in floral arrangements due to their long-lasting nature."
+    },
+    {
+        "common_name": "Zinnia",
+        "scientific_name": "Zinnia elegans",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Moderate, avoid wetting foliage",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, fertile soil",
+        "tips": "Space plants well to ensure good air circulation.",
+        "fun_fact": "Zinnias were the first flowers grown in space by NASA."
+    },
+    {
+        "common_name": "Gladiolus",
+        "scientific_name": "Gladiolus hortulanus",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Regular, especially during growth",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, sandy loam",
+        "tips": "Plant bulbs in succession for continuous blooming.",
+        "fun_fact": "The name 'Gladiolus' comes from the Latin word for sword."
+    },
+    {
+        "common_name": "Snapdragon",
+        "scientific_name": "Antirrhinum majus",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Regular, keep soil slightly moist",
+        "sunlight": "Full sun to partial shade",
+        "soil": "Well-drained, light soil",
+        "tips": "Deadhead to prolong flowering.",
+        "fun_fact": "Snapdragons get their name from the resemblance of their blooms to a dragon's mouth."
+    },
+    {
+        "common_name": "Hibiscus",
+        "scientific_name": "Hibiscus rosa-sinensis",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 2-3 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, fertile soil",
+        "tips": "Fertilize regularly for vibrant blooms.",
+        "fun_fact": "The Hibiscus sabdariffa variety is used to make a delicious, naturally red herbal tea known as hibiscus tea or \"sorrel\" in many cultures."
+    },
+    {
+        "common_name": "Jade Plant",
+        "scientific_name": "Crassula ovata",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Every 2-3 weeks",
+        "sunlight": "Indirect bright light",
+        "soil": "Well-drained succulent mix",
+        "tips": "Avoid overwatering to prevent root rot.",
+        "fun_fact": "Jade plants are often called the \"money tree\" because they're believed to attract wealth and prosperity."
+    },
+    {
+        "common_name": "Snake Plant",
+        "scientific_name": "Sansevieria trifasciata",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Every 2-4 weeks",
+        "sunlight": "Low to bright indirect light",
+        "soil": "Well-drained sandy soil",
+        "tips": "Thrives in neglect; great for beginners.",
+        "fun_fact": "NASA found that snake plants can convert CO₂ into oxygen at night, making them one of the best bedroom plants for air purification."
+    },
+    {
+        "common_name": "Aloe Vera",
+        "scientific_name": "Aloe barbadensis miller",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Every 2-3 weeks",
+        "sunlight": "Bright, indirect sunlight",
+        "soil": "Well-drained succulent mix",
+        "tips": "Water sparingly to prevent root rot.",
+        "fun_fact": "Aloe vera gel contains 99% water but also has over 75 active compounds beneficial for skin and health."
+    },
+    {
+        "common_name": "Peace Lily",
+        "scientific_name": "Spathiphyllum",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Low to medium indirect light",
+        "soil": "Well-drained, rich soil",
+        "tips": "Keep soil moist but not soggy.",
+        "fun_fact": "Despite its beauty, the peace lily is not a true lily—it belongs to the Araceae family, like philodendrons and anthuriums."
+    },
+    {
+        "common_name": "Areca Palm",
+        "scientific_name": "Dypsis lutescens",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Every 5-7 days",
+        "sunlight": "Bright, indirect light",
+        "soil": "Well-draining potting mix",
+        "tips": "Mist leaves occasionally for humidity.",
+        "fun_fact": "This palm is often called the \"Butterfly Palm\" because of its feathery, arching fronds that resemble butterfly wings."
+    },
+    {
+        "common_name": "Money Plant",
+        "scientific_name": "Epipremnum aureum",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Every 7-10 days",
+        "sunlight": "Low to bright indirect light",
+        "soil": "Well-draining, nutrient-rich soil",
+        "tips": "Thrives in water as well as soil.",
+        "fun_fact": "It can grow in water alone, making it one of the easiest plants to care for with minimal effort."
+    },
+    {
+        "common_name": "Rubber Plant",
+        "scientific_name": "Ficus elastica",
+        "indoor_or_outdoor": "Indoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Bright, indirect light",
+        "soil": "Well-drained potting mix",
+        "tips": "Wipe leaves occasionally to remove dust.",
+        "fun_fact": "The white, milky sap of the rubber plant was once used to make natural rubber, hence the name!"
+    },
+    {
+        "common_name": "Bougainvillea",
+        "scientific_name": "Bougainvillea glabra",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Once a week",
+        "sunlight": "Full sun",
+        "soil": "Well-drained sandy or loamy soil",
+        "tips": "Trim branches to encourage bushy growth.",
+        "fun_fact": "The bright 'flowers' of bougainvillea are actually modified leaves called bracts!"
+    },
+    {
+        "common_name": "Jasmine",
+        "scientific_name": "Jasminum officinale",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 3-4 days",
+        "sunlight": "Full sun to partial shade",
+        "soil": "Well-drained, fertile soil",
+        "tips": "Train vines on a trellis for better growth.",
+        "fun_fact": "Jasmine flowers are often used in perfumes and tea for their enchanting fragrance."
+    },
+    {
+        "common_name": "Chrysanthemum",
+        "scientific_name": "Chrysanthemum morifolium",
+        "indoor_or_outdoor": "Outdoor",
+        "watering_frequency": "Every 3-4 days",
+        "sunlight": "Full sun",
+        "soil": "Well-drained, fertile soil",
+        "tips": "Pinch young plants to encourage bushy growth.",
+        "fun_fact": "Chrysanthemums symbolize happiness and longevity in many cultures, especially in Asia."
+    }
+]
