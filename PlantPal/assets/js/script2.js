@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (document.referrer) {
             window.history.back(); // Go to the previous page
         } else {
-            window.location.href = "/PlantPal/index.html"; // If no referrer, go to index.html
+            window.location.href = "/index.html"; // If no referrer, go to index.html
         }
     });
 
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         plantName = plantName.toLowerCase();
         console.log("Searching JSON for:", plantName);
 
-        fetch("/PlantPal/data/plants.json")
+        fetch("/data/plants.json")
             .then(response => response.json())
             .then(plants => {
                 const foundPlant = plants.find(plant =>
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const plantData = encodeURIComponent(JSON.stringify(foundPlant));
 
                     // Redirect to result.html with plant data
-                    window.location.href = `/PlantPal/result.html?plantData=${plantData}`;
+                    window.location.href = `/result.html?plantData=${plantData}`;
                 } else {
                     alert("Plant not found in database. Try another name.");
                 }
