@@ -227,6 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function submitSearch() {
         const plantName = plantInput.value.trim();
         const imageFile = imageInput.files && imageInput.files.length > 0 ? imageInput.files[0] : null;
+        const msg = document.getElementById("msg");
 
         console.log("Plant Name:", plantName || "No Name Entered");
         if (imageFile) {
@@ -234,9 +235,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (imageFile) {
+            msg.textContent = "Loading...";  
+            msg.style.display = "block";// Make it visible
+            msg.style.color = "white";
             findPlant(imageFile);
         }
         else if (plantName) {
+            msg.textContent = "Loading..."; 
+            msg.style.display = "block";
+            msg.style.color = "white";
             searchPlant(plantName);
         }
     }
