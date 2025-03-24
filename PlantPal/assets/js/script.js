@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageInput = document.getElementById("image-upload");
     const searchButton = document.getElementById("search-button");
 
+    const msg = document.getElementById('msg');
+
     const searchContainer = document.querySelector(".search-container");
     searchContainer.style.display = "flex";
     searchContainer.style.alignItems = "center";
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imagePreviewContainer.style.transform = "translateY(-50%)";
     imagePreviewContainer.style.alignItems = "center";
     imagePreviewContainer.style.gap = "5px";
-    imagePreviewContainer.style.border = "none"; // Ensure no border by default
+    imagePreviewContainer.style.border = "none";
 
     // Image preview
     const previewImage = document.createElement("img");
@@ -51,12 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show image preview
     imageInput.addEventListener("change", function () {
-        console.log("File input changed"); // Debugging
-        if (imageInput.files && imageInput.files.length > 0) { // Ensure file is selected
+        if (imageInput.files && imageInput.files.length > 0) { 
             const reader = new FileReader();
             reader.onload = function (e) {
                 previewImage.src = e.target.result;
-                imagePreviewContainer.style.display = "flex"; // Show container
+                imagePreviewContainer.style.display = "flex"; 
                 plantInput.style.paddingLeft = "60px";
             };
             reader.readAsDataURL(imageInput.files[0]);
@@ -65,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Remove image when clicking cross
     removeButton.addEventListener("click", function () {
-        imageInput.value = ""; // Clear file input
-        previewImage.src = ""; // Clear image preview
+        imageInput.value = ""; 
+        previewImage.src = ""; 
         imagePreviewContainer.style.display = "none";
         plantInput.style.paddingLeft = "10px";
     });
@@ -93,12 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
     
                 if (foundPlant) {
                     console.log("Plant Found:", foundPlant);
-                    // Redirect to result.html with plant details
+                    // Redirect to result.html
                     const plantData = encodeURIComponent(JSON.stringify(foundPlant));
 
-                    // Redirect to result.html with plant data
+                    // Redirect to result.html
                     window.location.href = `/result.html?plantData=${plantData}`;
                 } else {
+                    msg.textContent = "";
                     alert("Plant not found in database. Try another name.");
                 }
             })
@@ -115,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const base64Image = reader.result.split(',')[1];
     
             try {
-                // Make request to Plant.id API
+                // Plant.id API
                 const response = await fetch('https://api.plant.id/v2/identify', {
                     method: 'POST',
                     headers: {
@@ -136,10 +138,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (data && data.suggestions && data.suggestions.length > 0) {
                     const plantName = data.suggestions[0].plant_name.toLowerCase(); // Ensure case consistency
                     console.log("Identified Plant Name:", plantName);
-    
-                    // Call searchPlant function to check in JSON file
+                    
                     searchPlant(plantName);
                 } else {
+                    msg.textContent = "";
                     alert('Could not identify the plant. Try another image.');
                 }
             } catch (error) {
@@ -152,28 +154,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function submitSearch() {
         const plantName = plantInput.value.trim();
         const imageFile = imageInput.files && imageInput.files.length > 0 ? imageInput.files[0] : null;
-        const msg = document.getElementById('msg');
 
         console.log("Plant Name:", plantName || "No Name Entered");
         if (imageFile) {
             console.log("Image Selected:", imageFile.name);
         }
 
-        if (!plantName && !imageFile) { // Use AND instead of OR to ensure both are empty
-            msg.textContent = "Please give an input...";  // Use textContent instead of innerHTML
+        if (!plantName && !imageFile) { 
+            msg.textContent = "Please give an input...";  
             msg.style.display = "block";  // Make it visible
             msg.style.color = "red";
             return;
         }
 
         if (imageFile) {
-            msg.textContent = "Loading...";  // Use textContent instead of innerHTML
-            msg.style.display = "block";// Make it visible
+            msg.textContent = "Loading...";  
+            msg.style.display = "block";
             msg.style.color = "white";
             findPlant(imageFile);
         }
         else if (plantName) {
-            msg.textContent = "Loading...";  // Use textContent instead of innerHTML
+            msg.textContent = "Loading..."; 
             msg.style.display = "block";
             msg.style.color = "white";
             searchPlant(plantName);
