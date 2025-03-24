@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const fun = document.getElementById("fun");
     const desc = document.getElementById("desc");
 
+    const msg = document.getElementById("msg");
+
     function searchPlantData(name) {
         // get images
         const API_KEY = "AIzaSyCCkeFL1K6J7bDSqg7LLp3YCA32T8MWGOA";
@@ -64,13 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    // back button working
+    // back button
     const back = document.getElementById("back-btn");
     back.addEventListener("click", () => {
         if (document.referrer) {
             window.history.back(); // Go to the previous page
         } else {
-            window.location.href = "/index.html"; // If no referrer, go to index.html
+            window.location.href = "/index.html"; // go to index.html
         }
     });
 
@@ -92,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imagePreviewContainer.style.transform = "translateY(-50%)";
     imagePreviewContainer.style.alignItems = "center";
     imagePreviewContainer.style.gap = "5px";
-    imagePreviewContainer.style.border = "none"; // Ensure no border by default
+    imagePreviewContainer.style.border = "none";
 
     // Image preview
     const previewImage = document.createElement("img");
@@ -140,8 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Remove image when clicking cross
     removeButton.addEventListener("click", function () {
-        imageInput.value = ""; // Clear file input
-        previewImage.src = ""; // Clear image preview
+        imageInput.value = ""; 
+        previewImage.src = ""; 
         imagePreviewContainer.style.display = "none";
         plantInput.style.paddingLeft = "10px";
     });
@@ -171,9 +173,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Redirect to result.html with plant details
                     const plantData = encodeURIComponent(JSON.stringify(foundPlant));
 
-                    // Redirect to result.html with plant data
+                    // Redirect to result.html
                     window.location.href = `/result.html?plantData=${plantData}`;
                 } else {
+                    msg.textContent = ""; 
                     alert("Plant not found in database. Try another name.");
                 }
             })
@@ -190,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const base64Image = reader.result.split(',')[1];
 
             try {
-                // Make request to Plant.id API
+                // Plant.id API
                 const response = await fetch('https://api.plant.id/v2/identify', {
                     method: 'POST',
                     headers: {
@@ -212,9 +215,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     const plantName = data.suggestions[0].plant_name.toLowerCase(); // Ensure case consistency
                     console.log("Identified Plant Name:", plantName);
 
-                    // Call searchPlant function to check in JSON file
                     searchPlant(plantName);
                 } else {
+                    msg.textContent = ""; 
                     alert('Could not identify the plant. Try another image.');
                 }
             } catch (error) {
@@ -227,7 +230,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function submitSearch() {
         const plantName = plantInput.value.trim();
         const imageFile = imageInput.files && imageInput.files.length > 0 ? imageInput.files[0] : null;
-        const msg = document.getElementById("msg");
 
         console.log("Plant Name:", plantName || "No Name Entered");
         if (imageFile) {
