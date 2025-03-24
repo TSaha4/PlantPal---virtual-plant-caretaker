@@ -173,6 +173,13 @@ body {
     font-size: 18px;
 }
 
+#msg {
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+    /* Initially hidden */
+}
+
 .result-container {
     min-height: auto;
     margin: 10px 2px;
