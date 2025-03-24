@@ -75,7 +75,7 @@ body {
 /* SEARCH SECTION */
 #search {
     background: linear-gradient(rgb(10, 80, 36), rgb(13, 112, 49));
-    height: 10vh;
+    min-height: 10vh;
     position: relative;
 }
 
@@ -174,10 +174,9 @@ body {
 }
 
 #msg {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    display: none;
-    /* Initially hidden */
+    display: none; /* Initially hidden */
 }
 
 .result-container {
@@ -239,7 +238,7 @@ body {
 }
 
 #imgs img:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
+    transform: scale(1.02);
 }
 
 hr {
